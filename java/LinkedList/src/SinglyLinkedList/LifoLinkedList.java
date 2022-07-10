@@ -38,8 +38,26 @@ public class LifoLinkedList {
             return tmpNode.getData();
         }
         else return null;
-
     }
+
+    public Node getNode(int index) {
+        if ( index >= 0 && index < this.counter ) {
+            Node tmpNode = this.head;
+            int i = 0;
+
+            while ( i < index ) {
+                tmpNode = tmpNode.getBranch();
+                i++;
+            }
+            return tmpNode;
+        }
+        else return null;
+    }
+
+    public Node getFirstNode() { return this.head; }
+
+    public Node getLastNode() { return this.tail; }
+
 
 
     public Number length() {

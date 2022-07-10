@@ -10,6 +10,10 @@ public class Main {
         linkedList.setNode(32);
 
         System.out.println("[+] Total nodes: " + linkedList.length() );
-        System.out.println("[+] Node data: " + linkedList.getData(3));
+        System.out.println("[+] Node data: " + linkedList.getData(3) );
+        System.out.println("[+] First node: " + linkedList.getFirstNode() );
+        System.out.println("[+] Last node: " + linkedList.getLastNode().getData() );
+
+        System.out.println("[-] Node... index(2): " + linkedList.getNode(2) );
     }
 }
