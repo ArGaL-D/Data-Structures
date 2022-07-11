@@ -1,7 +1,7 @@
 import SinglyLinkedList.LifoLinkedList;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         LifoLinkedList linkedList = new LifoLinkedList();
         linkedList.setNode(123);
@@ -14,6 +14,20 @@ public class Main {
         System.out.println("[+] First node: " + linkedList.getFirstNode() );
         System.out.println("[+] Last node: " + linkedList.getLastNode().getData() );
 
-        System.out.println("[-] Node... index(2): " + linkedList.getNode(2) );
+        System.out.println("[-] Get a Node: " + linkedList.getNode(3) );
+
+        linkedList.removeNode(2);
+
+        /*
+        for ( int i = 0; i < linkedList.length(); i++ ) {
+            System.out.println( linkedList.getData(i) );
+        }
+        */
+
+        System.out.println("[-] Last node: " + linkedList.getLastNode().getData() );
+
+        linkedList.removeAllNodes();
+
+        System.out.println("[-] Node..? " + linkedList.getNode(100));
     }
 }

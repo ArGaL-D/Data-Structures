@@ -14,15 +14,9 @@ public class Node {
         return data;
     }
 
-    public Node getBranch() {
-        return branch;
-    }
+    public Node getBranch() { return branch; }
 
-    public void setData(Object data) {
-        this.data = data;
-    }
+    public void setData(Object data) { this.data = data; }
 
-    public void setBranch(Node branch) {
-        this.branch = branch;
-    }
+    public void setBranch(Node branch) { this.branch = branch; }
 }
